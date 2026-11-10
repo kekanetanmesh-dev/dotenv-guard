@@ -1,0 +1,21 @@
+{
+  "name": "dotenv-guard",
+  "version": "0.1.0",
+  "description": "Keep .env files honest: find keys missing from .env.example, empty or duplicate values, and drift between environments. Zero dependencies, CI-friendly.",
+  "type": "module",
+  "bin": { "dotenv-guard": "./src/cli.js" },
+  "main": "./src/index.js",
+  "exports": "./src/index.js",
+  "files": ["src", "README.md", "LICENSE"],
+  "scripts": {
+    "test": "node --test \"test/**/*.test.js\"",
+    "lint": "node --check src/*.js"
+  },
+  "engines": { "node": ">=20" },
+  "keywords": ["dotenv", "env", "environment", "config", "lint", "ci", "cli", "twelve-factor"],
+  "author": "Tanmesh Kekane",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/kekanetanmesh-dev/dotenv-guard.git" },
+  "bugs": { "url": "https://github.com/kekanetanmesh-dev/dotenv-guard/issues" },
+  "homepage": "https://github.com/kekanetanmesh-dev/dotenv-guard#readme"
+}
